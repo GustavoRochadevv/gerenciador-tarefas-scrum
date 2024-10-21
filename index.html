@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas Scrum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Gerenciador de Tarefas Scrum 📝</h1>
+        <p id="greetingMessage"></p>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa ao Backlog!">
+            <button id="addTaskBtn">Adicionar ao Backlog 📋</button>
+        </div>
+
+        <div class="scrum-board">
+            <div class="column" id="backlog">
+                <h2>Backlog</h2>
+                <p id="emptyBacklogMessage" class="hidden">Nenhuma tarefa no backlog</p>
+                <ul id="backlogList"></ul>
+            </div>
+            <div class="column" id="inProgress">
+                <h2>Em Progresso</h2>
+                <p id="emptyInProgressMessage" class="hidden">Nenhuma tarefa em progresso</p>
+                <ul id="inProgressList"></ul>
+            </div>
+            <div class="column" id="completed">
+                <h2>Concluídas</h2>
+                <p id="emptyCompletedMessage" class="hidden">Nenhuma tarefa concluída</p>
+                <ul id="completedList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
